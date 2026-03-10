@@ -1,16 +1,112 @@
-# React + Vite
+# 🖥️ Jitterbit Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Navegação entre idiomas -->
+> **PT-BR** | [EN](#english-version)
 
-Currently, two official plugins are available:
+<!-- Descrição curta -->
+Dashboard frontend para gerenciamento de pedidos, consumindo a [Jitterbit Orders API](https://github.com/AlainDead/jitterbit-orders-api).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<!-- Stack utilizada no frontend -->
+- **React** + **Vite** — interface e build
+- **React Router DOM** — navegação entre páginas
+- **Axios** — requisições HTTP para a API
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Estrutura
+
+<!-- Organização das pastas do projeto -->
+```
+src/
+├── pages/
+│   ├── ListaPedidos.jsx   # Tabela com todos os pedidos
+│   └── CriarPedido.jsx    # Formulário de novo pedido
+├── services/
+│   └── orderService.js    # Comunicação com a API
+└── App.jsx                # Rotas da aplicação
+```
+
+---
+
+## ⚙️ Como rodar
+
+<!-- Pré-requisito: API backend rodando -->
+> A [Jitterbit Orders API](https://github.com/AlainDead/jitterbit-orders-api) precisa estar rodando em `http://localhost:3000`
+```bash
+git clone https://github.com/AlainDead/jitterbit-dashboard.git
+cd jitterbit-dashboard
+npm install
+npm run dev
+```
+
+Acesse: `http://localhost:5173`
+
+---
+
+## 📡 Funcionalidades
+
+<!-- O que o dashboard permite fazer -->
+- ✅ Listar todos os pedidos
+- ✅ Criar novo pedido com múltiplos itens
+- ✅ Deletar pedido
+
+---
+
+## 👨‍💻 Autor
+
+**Jonathan Alain**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jonathan--alain-blue?logo=linkedin)](https://linkedin.com/in/jonathan-alain-933432225/)
+
+---
+---
+
+<a name="english-version"></a>
+
+# 🖥️ Jitterbit Dashboard
+
+> **EN** | [PT-BR](#)
+
+Frontend dashboard for order management, consuming the [Jitterbit Orders API](https://github.com/AlainDead/jitterbit-orders-api).
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** + **Vite** — UI and build tool
+- **React Router DOM** — page navigation
+- **Axios** — HTTP requests to the API
+
+---
+
+## ⚙️ Getting Started
+
+> The [Jitterbit Orders API](https://github.com/AlainDead/jitterbit-orders-api) must be running at `http://localhost:3000`
+```bash
+git clone https://github.com/AlainDead/jitterbit-dashboard.git
+cd jitterbit-dashboard
+npm install
+npm run dev
+```
+
+Access: `http://localhost:5173`
+
+---
+
+## 📡 Features
+
+- ✅ List all orders
+- ✅ Create new order with multiple items
+- ✅ Delete order
+
+---
+
+## 👨‍💻 Author
+
+**Jonathan Alain**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jonathan--alain-blue?logo=linkedin)](https://linkedin.com/in/jonathan-alain-933432225/)
